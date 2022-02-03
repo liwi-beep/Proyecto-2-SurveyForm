@@ -30,6 +30,7 @@ body::after{
 body{
     background-image: url(../images/dwaynebackground.jpg); 
     background-attachment: fixed;
+    background-size: cover;
     font-family: 'Poppins', sans-serif;
     color: white;
     height: 100%;
