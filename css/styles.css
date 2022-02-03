@@ -122,6 +122,11 @@ label{
     line-height: inherit;
     height: 7rem;
  }
+
+textarea{
+resize: vertical;
+}
+ 
 span{
     font-size: 18px;
 }
