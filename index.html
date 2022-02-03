@@ -5,14 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyect 2 Survey Form</title>
+    <link rel="stylesheet" href="../Proyecto 2 SurveyForm/css/styles.css"
 </head>
 <body>
-    <div id="tittle">
-        <h1>The Rock's Survey Form</h1>
-        <div id="description">
-            <p>Are you the biggest Dwayne Johnson's fan on earth? Find out!</p>
-        </div>
+    <div class="container">   
+        <header class="header">
+            <h1>The Rock's Survey Form</h1>
+            <div id="description">
+                <p>Are you the biggest Dwayne Johnson's fan on earth? Find out!</p>
+            </div>
+        </header>
+<div id="flex-form-container">
+    <div class="form-container">
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name:</label>
+                <input class="input-bar" type="text" id="fname" name="fname" required placeholder="Please, enter your full name.">
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label" required>Email:</label>
+                <input class="input-bar" type="email" id="email" name="email" required placeholder="Please, enter your email.">
+            </div>
+            <div class="form-group">
+                <label for="age" id="age-label">Age:</label>
+                <input class="input-bar" type="number" id="age" name="age" required max="99" placeholder="Please, enter your age.">
+            </div>       
+            <div class="form-group">
+                <p>Which of the following movies you've watched the most?</p>
+                <select id="dropdown" class="form-group" name="movies" required>
+                    <option disabled="" selected="" value="">Select your favorite movie.</option>
+                    <option value="mummy">The Mummy Returns</option>
+                    <option value="doom">Doom: Hells Door</option>
+                    <option value="moana">Moana</option>
+                    <option value="andreas">San Andreas</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>What would you say is your level of devotion to the Great Rock?</p>
+                <label class="radio-text">
+                    <input class="input-radio" name="devotion" value="definitely" type="radio" checked>
+                    I would totally devote to him.
+                </label>
+                <label class="radio-text">
+                    <input class="input-radio" name="devotion" value="medium" type="radio"> 
+                    I think he's a great person but he's not that much of an actor.
+                </label>
+                <label class="radio-text">
+                    <input class="input-radio" name="devotion" value="no"" type="radio">
+                    I'm a robot so I can't really bond with anyone.
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Which are the following personality traits you think Dwayne's has?</p> <span class="clue">Check all the <b>CORRECT</b> ones:</span>
+                <div>
+                    <label class="checkbox-text">
+                        <input class="input-checkbox" name="prefer"     value="charming" type="checkbox">
+                        Charming
+                    </label>
+                </div>
+                <div>
+                    <label class="checkbox-text">
+                        <input class="input-checkbox" name="prefer" value="decisive" type="checkbox">
+                        Decisive
+                    </label>
+                </div>
+                <div>
+                    <label class="checkbox-text">
+                        <input class="input-checkbox" name="prefer" value="mean" type="checkbox">
+                        Mean (No)
+                    </label>
+                </div>
+                <div>
+                    <label class="checkbox-text">
+                        <input class="input-checkbox" name="prefer" value="spontaneous" type="checkbox">
+                        Spontaneous
+                    </label>
+                </div>
+                <div>
+                    <label class="checkbox-text">
+                        <input class="input-checkbox" name="prefer" value="forward-thinking" type="checkbox">
+                        Forward-thinking
+                    </label>
+                </div>
+                <div>
+                    <label class="checkbox-text">
+                        <input class="input-checkbox" name="prefer" value="enthusiastic" type="checkbox"> 
+                        Enthusiastic 
+                    </label>
+                </div> 
+            </div> 
+            <div class="form-group">
+                <p >Anything else you want to say about the allmighty Rock?</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here."></textarea>
+            </div>
+            <div class="form-group">
+                <div class="button-flex">
+                    <button  class="submit-button"id="submit" type="submit"> 
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </form>
     </div>
-    
+</div>
 </body>
 </html>
